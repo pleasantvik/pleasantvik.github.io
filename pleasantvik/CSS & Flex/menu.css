@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-top: 0px solid red;
+
+    background-color: #d6e9fe;
+}
+li {
+    border: 0px solid red;
+    flex-basis: 25%;
+    text-align: center;
+}
+
+
+header {
+    border: 0px solid red;
+    display: flex;
+    
+}
+.leftheader {
+    flex-basis: 40%;
+    border: 0px solid yellow;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+.rightheader {
+    flex-basis: 60%;
+    border: 0px dotted purple;
+    margin-top: 3.75rem;
+    padding-left: 0.5rem;
+
+}
+.rightheader h1 {
+    border: 0px solid black;
+    margin-bottom: 0;
+}
+.rightheader p {
+    border: 0px solid purple;
+    margin-top: 0;
+}
+
+.page {
+    width: 100%;
+    margin: 0 auto;
+}
+
+a:visited, a:link {
+    color: #5d6063;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body, .header {
+    font-size: 18px;
+}
+.headers {
+    background-color: #d6e9fe;
+    color: #5d6063;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    
+}
+
+.menu {
+    margin-top: 15px;
+}
+.menu>li {
+    display: inline;
+    margin-right: 20px;
+}
+.menu > li:last-of-type {
+    margin-right: 0px;
+}
+
+
+
+.features-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #b2d6ff;
+    border-radius: 5px;
+    padding-top: 60px;
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    z-index: 1;
+
+}
+
+.features-menu li {
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    padding: 0 40px 10px 20px;
+    margin: 10px;
+
+}
+.features-menu li:last-of-type {
+    border-bottom: none;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown span {
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown:hover .features-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #b2d6ff;
+    border-radius: 5px;
+    padding-top: 60px;
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+.first {
+    display: grid;
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: 50vh 5em 5em auto;
+    background-color: lightblue;
+    width: 90%;
+
+    margin: 0 auto;
+  
+}
+
+
+
+.titled {
+    color: white;
+    font-size: 3.5em;
+}
+
+.titled span {
+    font-size: 300;
+    display: block;
+}
+
+.small-title {
+    text-transform: uppercase;
+
+}
+
+.section-one{
+    background: url(img/140x200.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    text-align: center;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-two { 
+    display: flex;
+    justify-content: space-around;
+    background: #ddd;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+
+
+}
+
+.section-three {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: lightblue;;
+    padding: 60px 0;
+
+
+}
+
+.contained {
+    background-color: pink;
+    grid-column: 2/3;
+}
+
+
+
+
+
+
+.containers {
+    display: grid;
+    grid-template-columns: 1fr 15px 1fr 15px  1fr ;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    background: #EFB106;;
+    grid-gap: 1em;
+    color: grey;
+    background-size: cover;
+
+
+
+
+    margin: 0;
+    font-family: serif;
+    font-size: 1.125rem;
+}
+
+
+.titles {
+    color: white;
+    font-size: 3.5rem;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: calc(6rem + 3vw);
+    font-weight: black;
+    color: #fff;
+    text-shadow: 10px 10px 15px rgba(red, green, blue, alpha) 0, 0, 0, .5;
+    font-weight: black;
+    color: #fff;
+    text-shadow: 10px 10px 15px rgba(red, green, blue, alpha) 0, 0, 0, .5;
+    align-self: end;
+}
+
+.team-member {
+    background-color: #29445a;
+    text-align: center;
+    border: 12px solid white;
+    box-shadow: 0 0 10px black;
+}
+
+.number-1 {
+    grid-column: 1/3;
+    grid-row: 3/6;
+}
+
+.number-2 {
+    grid-column: 2/5;
+    grid-row: 2/4;
+}
+
+.number-3 {
+    grid-column: 4/6;
+    grid-row: 3/7;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1em;
+    font-weight: bolder;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: grey;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    .first { 
+        width: 960px;
+        margin: 0 auto;
+    }
+    .features-menu {
+        display: inline;
+    }
+}
