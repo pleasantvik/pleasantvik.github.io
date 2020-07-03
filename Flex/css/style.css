@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-top: 0px solid red;
+
+    background-color: #d6e9fe;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+li {
+    border: 0px solid red;
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; /* it defines the horizontal alignment of the item in the container. it is similar to doing the margin: 0 auto for the flex item */
+
+}
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+.signup {
+    margin-left: auto;
+}
+.links {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+.login {
+    margin-left: 20px;
+}
+.header-container {
+    color: #5995da;
+    background-color: #d6e9fe;
+    display: flex;
+    justify-content: center;
+}
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+.first-item {
+    order: 1;
+}
+.last-item {
+    order: -1;
+}
+.social, .subscribe {
+    align-self: flex-end;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #d6e9fe;
+    height: 200px;
+    flex: 1;
+}
+.footer-three {
+    flex: 2;
+}
+.footer-one, .footer-three {
+    background-color: #5995da;
+    flex: initial;
+    width: 300px;
+}
